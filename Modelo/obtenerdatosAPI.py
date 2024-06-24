@@ -20,8 +20,8 @@ import time
 import os
 
 def get_oauth_token():
-    api_key = 'h93pm8qnz2ronibvvjyn2b2aq94knncg'  # provided by Idealista
-    secret = 'ffXpjg7DVgUM'  #  provided by Idealista
+    api_key =   # PONER TU API KEY provided by Idealista
+    secret =  # PONER TU API KEY provided by Idealista
     # Combine the API key and the secret to get a personalized message
     message = api_key + ":" + secret
     auth = "Basic " + base64.b64encode(message.encode("utf-8")).decode("utf-8")  # Codificar el mensaje
