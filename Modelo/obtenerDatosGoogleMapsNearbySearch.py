@@ -6,22 +6,6 @@ Created on Sun Apr 14 17:18:01 2024
 @author: cristobaljimenez_
 """
 
-
-#  CAMBIAR NOMBRES CSV Y "TIPO". HAY QUE FILTRAR MANUALMENTE ALGUNOS DATOS DESCARGADOS DE LA API DE GOOGLE MAPS
-#guía:https://developers.google.com/maps/documentation/places/web-service/search-nearby?hl=es-419
-
-# API KEY: AIzaSyDE_BxqhETg16olI4yK20Sr4qokhBdnUag
-
-# manual places API:https://github.com/googlemaps/google-maps-services-python/blob/master/googlemaps/places.py
-
-# Cómo agregar la clave de API a tu solicitud
-
-# Debes incluir una clave de API con cada solicitud a la API de Places. En el siguiente ejemplo, reemplaza YOUR_API_KEY por tu clave de API.
-
-# https://places.googleapis.com/v1/places/ChIJj61dQgK6j4AR4GeTYWZsKWw?fields=id,displayName&key=YOUR_API_KEY
-# Se requiere HTTPS para las solicitudes que usan una clave de API.
-
-
 import requests as rq
 import json
 import pandas as pd
@@ -32,7 +16,7 @@ def obtener_datos_google_maps():
     base_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
     center_loc = '37.179580%2C-3.599720' # %2C == ','  se usa en codificación URL para que no haya problemas con la coma
     distance ='6000'
-    api_key = 'AIzaSyDE_BxqhETg16olI4yK20Sr4qokhBdnUag'
+    api_key = #PONER LA TUYA
     idioma = 'es'
     sort = 'prominence' #rankby importance of site
     puntos_interes = [
