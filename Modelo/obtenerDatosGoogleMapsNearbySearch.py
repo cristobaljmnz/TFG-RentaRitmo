@@ -17,7 +17,7 @@ def obtener_datos_google_maps():
     base_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?'
     center_loc = '37.179580%2C-3.599720' # %2C == ','  se usa en codificación URL para que no haya problemas con la coma
     distance ='6000'
-    api_key = 'AIzaSyDE_BxqhETg16olI4yK20Sr4qokhBdnUag'
+    api_key = #PONER TU API KEY
     idioma = 'es'
     sort = 'prominence' #rankby importance of site
     puntos_interes = [
